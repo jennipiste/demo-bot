@@ -2,6 +2,7 @@ import java.text.SimpleDateFormat
 
 node {
     // Test pull requests
+    println 'moi'
     if (env.BRANCH_NAME != 'master') {
         stage 'Git pull'
         checkout scm
